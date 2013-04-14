@@ -1,5 +1,5 @@
 #!/bin/bash
-# ruby main.rb query-5.xml
+FEEDBACK=false
 while getopts ri:o:m:d: option
 do
     case "${option}" in

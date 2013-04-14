@@ -141,9 +141,11 @@ def ParseQuery(n)
 	require "rexml/document"
 	include REXML
 	query_file = REXML::Document.new(File.open($options[:i], "r"))
-	Dir.mkdir("#{$dir_queryfile}/queries_converted")
+	if !Dir.exist?("#{$dir_queryfile}/queries_converted") # "./model-files/inverted-index_converted/0_dictionary"
+		Dir.mkdir("#{$dir_queryfile}/queries_converted")
+	end
 
-	query_number = 1 #to name file_name
+	p query_number = 1 #to name file_name
 	query_file.elements.each("xml/topic") do |topic|
 		# parse query
 		file_name = "query#{query_number}"

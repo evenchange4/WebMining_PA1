@@ -37,13 +37,11 @@ $avgdoclen = $doclen.inject(0.0){ |sum, element| sum += element } / $doclen.size
 ###
 
 ### query parse
-if !Dir.exist?("#{$dir_queryfile}/queries_converted") # "./model-files/inverted-index_converted/0_dictionary"
-	ParseQuery(2) # 2 for bigram only
-end
+ParseQuery(2) # 2 for bigram only
 ###
 
 ### scoring & output result
-n = $options[:i].split("-")[1].split(".")[0].to_i
+p n = $options[:i].split("-")[1].split(".")[0].to_i
 
 if $options[:r] # relevance feedback
 	ans_f    = File.open("./#{$options[:o]}-#{n}", 'w')

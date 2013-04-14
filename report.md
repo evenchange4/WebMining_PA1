@@ -40,4 +40,4 @@ $ chmod +x compile.sh
 $ ./compile.sh
 $ chmod +x execute.sh 
 $ ./execute.sh -r -i ./queries/query-5.xml -o ans -m ./model-files -d ./CIRB010
-$ ./execute.sh -r -i ../tmp2/queries/query-5.xml -o ans -m ../tmp2/model-dir -d ../tmp2/CIRB010
+$ ./execute.sh -r -i /tmp2/queries/query-5.xml -o ans -m /tmp2/model-dir -d /tmp2/CIRB010
