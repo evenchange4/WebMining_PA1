@@ -3,6 +3,8 @@
 Web Retrieval and Mining spring 2013 Programming HW 1
 [page](https://sites.google.com/site/irlabwm2013/)
 
+## Ranking with
+
 1. Vector Space Model (VSM) 
 2. Rocchio Relevance Feedback (pseudo version)
 
